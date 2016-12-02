@@ -1,0 +1,83 @@
+{
+  total = 2
+  rows:[
+    {
+      title = "杭州市招混凝土木工",
+      jobtype = "1021",
+      hiring = "5",
+      agetype = "10",
+      calculateway = "1",
+      publisher = "1000000007",
+      proviceid = "330000",
+      cityid = "330100",
+      areaid = "330106",
+      positionx = null,
+      positiony = null,
+      address = "野风现代之星",
+      mobile = "15658856206",
+      viewcount = "4",
+      ishiring = "1",
+      workexper = null,
+      provicename = "浙江省",
+      cityname = "杭州市",
+      areaname = "西湖区",
+      isauth = "2",
+      isreview = null,
+      companyid = null,
+      interestcount = null,
+      remarks = null,
+      createBy = null,
+      createDate = {Date@8233} "Fri Apr 08 15:37:07 CST 2016",
+    updateBy = null,
+    updateDate = null,
+    delFlag = "0",
+    inputSearch = null,
+    id = "694edd27-11da-46b6-9f9e-56095d58ea50",
+    currentUser = null,
+    page = null,
+    sqlMap = null,
+    isNewRecord = false,
+    },
+    {
+      title = "杭州市招混凝土木工"
+      jobtype = "1021"
+      hiring = "5"
+      agetype = "10"
+      calculateway = "1"
+      publisher = "1000000007"
+      proviceid = "330000"
+      cityid = "330100"
+      areaid = "330106"
+      positionx = null
+      positiony = null
+      address = "野风现代之星"
+      mobile = "15658856206"
+      viewcount = "0"
+      ishiring = "1"
+      workexper = null
+      provicename = "浙江省"
+      cityname = "杭州市"
+      areaname = "西湖区"
+      isauth = "2"
+      isreview = null
+      companyid = null
+      interestcount = null
+      remarks = null
+      createBy = null
+      createDate = {Date@8254} "Thu Apr 07 11:15:24 CST 2016"
+    updateBy = null
+    updateDate = null
+    delFlag = "0"
+    inputSearch = null
+    id = "b077f1aa-bfca-48fa-a6d8-3a5ab8a0ad92"
+    currentUser = null
+    page = null
+    sqlMap = null
+    isNewRecord = false
+    }
+  ]
+  rowsstr = null
+  totalsalary = null
+  totalsalarystr = null
+  applyusersalary = null
+}

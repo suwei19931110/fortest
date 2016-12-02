@@ -1,0 +1,73 @@
+/*------------------------------------*\
+    $mixin
+\*------------------------------------*/
+.banner {
+  position: relative;
+  text-align: center;
+  height: 226px;
+}
+[data-dpr="2"] .banner {
+  height: 452px;
+}
+[data-dpr="2.5"] .banner {
+  height: 565px;
+}
+[data-dpr="2.75"] .banner {
+  height: 622px;
+}
+[data-dpr="3"] .banner {
+  height: 678px;
+}
+[data-dpr="4"] .banner {
+  height: 904px;
+}
+.banner img {
+  width: 100%;
+  height: 226px;
+}
+[data-dpr="2"] .banner img {
+  height: 452px;
+}
+[data-dpr="2.5"] .banner img {
+  height: 565px;
+}
+[data-dpr="2.75"] .banner img {
+  height: 622px;
+}
+[data-dpr="3"] .banner img {
+  height: 678px;
+}
+[data-dpr="4"] .banner img {
+  height: 904px;
+}
+.board {
+  display: inline-block;
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 47px;
+}
+[data-dpr="2"] .board {
+  margin-top: 94px;
+}
+[data-dpr="2.5"] .board {
+  margin-top: 118px;
+}
+[data-dpr="2.75"] .board {
+  margin-top: 129px;
+}
+[data-dpr="3"] .board {
+  margin-top: 141px;
+}
+[data-dpr="4"] .board {
+  margin-top: 188px;
+}
+.bg-01 {
+  background: url("../../../static/images/bg_header.png") no-repeat bottom center;
+  height: 100px;
+}
+.bg-02 {
+  background: url("../../../static/images/bg-02@2x.png") no-repeat bottom right;
+  height: 100px;
+  background-color: #fff;
+  margin-top: 2px;
+}

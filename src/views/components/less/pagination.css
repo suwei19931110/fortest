@@ -1,0 +1,27 @@
+/*------------------------------------*\
+    $pagination
+\*------------------------------------*/
+.pagenator {
+  font-size: 12px;
+  width: 1000px;
+  margin: 0 auto;
+  text-align: right;
+}
+.pagenator .current {
+  color: #fff;
+  background-color: #6d95d0;
+}
+.pagenator span {
+  display: inline-block;
+}
+.pagenator ul {
+  display: inline-block;
+  margin: 24px;
+  list-style: none;
+}
+.pagenator ul li {
+  float: left;
+  padding: 6px 10px;
+  cursor: pointer;
+  text-align: center;
+}

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>发布项目</title>
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker-standalone.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/jquery-ui.css">
+    <link rel="stylesheet" href="lib/jquery-ui.structure.css">
+    <link rel="stylesheet" href="lib/jquery-ui.theme.css">
+    <link rel="stylesheet" href="lib/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="lib/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <section class="container">
+            <div class="nav">
+                <div class="txt_guide">工程项目&gt;项目工作</div>
+                <div class="table_title"><em></em>
+                    <ul class="form-tab">
+                        <li><a href="javascript:" class="active" id="nav-1">工作列表</a></li>
+                        <li><a href="javascript:" id="nav-2">发布工作</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main js-joblist-tab ">
+                <form action="" class="form-horizontal form-find" id="job-list">
+                    <div class="form-group">
+                        <label for="form-title" class="col-sm-1 input-title">标题</label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="form-title" placeholder="请填写标题">
+                        </div>
+                        <label for="" class="col-sm-1">工种类型</label>
+                        <div class="col-sm-3">
+                            <select name="" id="" class="form-control">
+                                <option value="" disabled selected> 请选择工种类型</option>
+                                <option value=""> 选项一</option>
+                                <option value=""> 选项一</option>
+                                <option value=""> 选项一</option>
+                                <option value=""> 选项一</option>
+                            </select>
+                        </div>
+                        <label for="" class="col-sm-1">工种类型</label>
+                        <div class="form-job-type col-sm-3">
+                            <select name="" id="form-job-type" class="form-control">
+                                <option value="" disabled selected> 请选择计价方式</option>
+                                <option value=""> 选项一</option>
+                                <option value=""> 选项一</option>
+                                <option value=""> 选项一</option>
+                                <option value=""> 选项一</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-is-urgent" class="col-sm-1">是否急招</label>
+                        <div class="col-sm-3">
+                            <select name="" id="form-is-urgent" class="form-control">
+                                <option value="" disabled selected> 请选择是否急招</option>
+                                <option value="">是</option>
+                                <option value="">否</option>
+                            </select>
+                        </div>
+                        <label for="start-time" class="col-sm-1">发布时间</label>
+                        <div class="col-sm-3 input-append date ">
+                            <input type="text" class="form-control " data-date-format="yyyy-mm-dd" id="start-time" placeholder="请选择时间">
+                        </div>
+                        <label for="end-time" class="col-sm-1 endtime-label"><span>———</span></label>
+                        <div class="input-append date form_datetime  col-sm-3">
+                            <input size="16" type="text" value="" id="end-time" class="form-control  col-sm-2" placeholder="请选择时间">
+                            <span class="add-on"><i class="icon-th"></i></span>
+                        </div>
+                    </div>
+                    <div class="form-submit">
+                        <button class="btn btn-default" type="submit">查询</button>
+                    </div>
+                </form>
+                <table class="table table-striped  display" id="js-job-table" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>标题</th>
+                            <th>工种类型</th>
+                            <th>招聘数量</th>
+                            <th>年龄范围</th>
+                            <th>计价方式</th>
+                            <th>手机号</th>
+                            <th>是否急招</th>
+                            <th>发布时间</th>
+                            <th>感兴趣数</th>
+                            <th>审核状态</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>行数据</td>
+                            <td>行数据</td>
+                            <td>行数据</td>
+                            <td>行数据</td>
+                            <td>行数据</td>
+                            <td>行数据</td>
+                            <td>行数据</td>
+                            <td>行数据</td>
+                            <td>行数据</td>
+                            <td>行数据</td>
+                            <td class="form-action"><a href="javascript:" v-on:click.prevent="showModal">查看</a>|<a href="javascript:" v-on:click.prevent="showDelModal">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>行数据</td>
+                            <td>行数据</td>
+                            <td>行数据</td>
+                            <td>行数据</td>
+                            <td>行数据</td>
+                            <td>行数据</td>
+                            <td>行数据</td>
+                            <td>行数据</td>
+                            <td>行数据</td>
+                            <td>行数据</td>
+                            <td class="form-action"><a href="javascript:" v-on:click.prevent="showModal">查看</a>|<a href="javascript:" v-on:click.prevent="showDelModal">删除</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="js-publish-tab hidden ">
+                <form action="" class="form-horizontal" id="publish-job">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">项目名称</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="" placeholder="请填写项目名称">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">工种类型</label>
+                        <div class="col-sm-8">
+                            <select name="" id="" class="form-control">
+                                <option value="" disabled selected>请选择工种类型</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">招聘数量</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="请输入招聘数量">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">年龄范围</label>
+                        <div class="col-sm-8">
+                            <select name="" id="" class="form-control">
+                                <option value="" disabled selected>请选择年龄范围</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">计价方式</label>
+                        <div class="col-sm-8">
+                            <select name="" id="" class="form-control">
+                                <option value="" disabled selected><span>请选择计价方式</span></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">工作经验</label>
+                        <div class="col-sm-8">
+                            <select name="" id="" class="form-control">
+                                <option value="" disabled selected>请选择工作经验</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">工作地区</label>
+                        <div class="col-sm-8">
+                            <select name="" id="" class="form-control">
+                                <option value="" disabled selected> 请选择工作地区</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">是否急招</label>
+                        <div class="col-sm-8">
+                            <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked> 否
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 是
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">详细地址</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="请输入详细地址">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-10 btn-submit-job">
+                            <button type="button" class="btn btn-default">提交</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">查看详情</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>标签</p>
+                    </div>
+                    <div class="modal-footer">
+                        <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+        <div class="modal fade" id="deleteModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">删除工作</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>标签</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-primary active">保存</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+    </div>
+    <script src="//cdn.bootcss.com/vue/1.0.17/vue.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery-validate/1.15.0/jquery.validate.min.js"></script>
+    <script src="lib/jquery-ui.js"></script>
+    <script src="lib/jquery.ui.datepicker-zh-CN.js"></script>
+    <script src="lib/jquery.dataTables.min.js"></script>
+    <script src="lib/dataTables.bootstrap.min.js"></script>
+    <script src="//cdn.bootcss.com/vue-resource/0.7.0/vue-resource.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        var modalInstance = $('#myModal');
+        var modalDelInstance = $('#deleteModal');
+        var vm = new Vue({
+            el: '#app',
+            data: {
+                msg: 'hello,world',
+                result1: null,
+                result2: null,
+                result3: null,
+                endDatetime: null,
+                toggletab: false
+            },
+            methods: {
+                showModal: showModal,
+                showDelModal: showDelModal
+            }
+        });
+        $('#myModal').on('shown.bs.modal', function() {
+            $('#myInput').focus()
+        });
+
+        function showModal() {
+            modalInstance.modal('toggle')
+        };
+
+        function showDelModal() {
+            modalDelInstance.modal('toggle')
+        };
+        $('#publish-job').validate({});
+
+        $('.form-tab a ').on('click', function(e) {
+            var jspublishtab = $('.js-joblist-tab');
+            var jsjoblisttab = $('.js-publish-tab');
+            var target = e.target
+            if (e.target) {
+                if (target.id === 'nav-1') {
+                    jspublishtab.removeClass('hidden');
+                    jsjoblisttab.addClass('hidden');
+                } else if (target.id === 'nav-2') {
+                    jspublishtab.addClass('hidden');
+                    jsjoblisttab.removeClass('hidden');
+                }
+            }
+        });
+
+        $('#nav-1').click(function() {
+            $('#nav-2').removeClass('active')
+            $('#nav-1').addClass('active')
+        });
+        $('#nav-2').click(function() {
+            $('#nav-1').removeClass('active')
+            $('#nav-2').addClass('active')
+        })
+        $('#start-time').datepicker();
+        $('#end-time').datepicker();
+        $(document).ready(function() {
+            $('#js-job-table').DataTable({
+                "language": {
+                    "lengthMenu": "每页展示 _MENU_ 条",
+                    "zeroRecords": "没有记录",
+                    "info": "展示 _PAGES_ 条中的第  _PAGE_ 条",
+                    "infoEmpty": "没有记录",
+                    "infoFiltered": "(从 _MAX_ 条中过滤)"
+                },
+        });
+        })
+    </script>
+</body>
+
+</html>

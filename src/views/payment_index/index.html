@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../components/less/common.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>首页</title>
+</head>
+
+<body class="layout layout-m-w">
+<img src="./images/dwarf.png" alt="小人" class="dwarf">
+<div class="container">
+    <div class="nav">
+        <div class="logo">
+            <img src="../../static/images/logo@2x.png" alt="">
+        </div>
+        <ul class="menus">
+            <li>首页</li>
+            <li>工程项目
+                <ul class="drop-down" hidden>
+                    <li data-url="javascript:">下拉菜单1</li>
+                    <li data-url="javascript:">下拉菜单2</li>
+                    <li data-url="javascript:">下拉菜单3</li>
+                </ul>
+            </li>
+            <li>工资支付
+                <ul class="drop-down" hidden>
+                    <li data-url="javascript:">下拉菜单1</li>
+                    <li data-url="javascript:">下拉菜单2</li>
+                    <li data-url="javascript:">下拉菜单3</li>
+                </ul>
+            </li>
+            <li>安全中心
+                <ul class="drop-down" hidden>
+                    <li data-url="javascript:">下拉菜单1</li>
+                    <li data-url="javascript:">下拉菜单2</li>
+                    <li data-url="javascript:">下拉菜单3</li>
+                </ul>
+            </li>
+            <li>数据分析
+                <ul class="drop-down" hidden>
+                    <li data-url="javascript:">下拉菜单1</li>
+                    <li data-url="javascript:">下拉菜单2</li>
+                    <li data-url="javascript:">下拉菜单3</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="banner bc-id-1">
+        <!-- <img src="./images/banner.png" alt="background"> -->
+        <div class="board">
+            <div class="left">
+                <div class="welcome">欢迎您，XXX建设集团</div>
+                <div class="identify">实名认证:已认证 <span><a href="javascript:">查看详情</a></span></div>
+                <div>帐号详情：13637479724 <span>安全退出</span></div>
+                <div class="last-login-time">上次登录时间:2016-07-07</div>
+            </div>
+            <div class="right">
+                <span class="title">账户余额</span><span class="mark js-mark-balance">?</span>
+                <span class="sum">102400.6元</span>
+                <div class="recharge-warpper">
+                    <span>线下充值付款成功后，请点击</span>
+                    <button class="btn  btn-primary js-recharge">转入</button>
+                    <span>将资金转入账户余额</span>
+                </div>
+                <div class="bubbles js-mark-bubbles" hidden>
+                    <div class="bubbles-box">
+                            <span class="bubbles-content">
+                            </span>
+                        气泡气泡气泡气泡气泡气泡气泡气泡气泡气泡气泡气泡气泡气泡气泡
+                        气泡气泡气泡气泡气泡气泡气泡气泡气泡气泡气泡气泡气泡气泡气泡
+                        气泡气泡气泡气泡气泡气泡气泡气泡气泡气泡气泡气泡气泡气泡气泡
+                        气泡气泡气泡气泡气泡气泡气泡气泡气泡气泡气泡气泡气泡气泡气泡
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-box">
+        <span class="table-title"><em></em>我的账单</span>
+        <div class="pay_record">
+            <form action="" class="select-input">
+                <select name="type">
+                    <option value="0">工资支付记录</option>
+                    <option value="1">转入记录</option>
+                </select>
+            </form>
+        </div>
+    </div>
+    <table class="ui-table clearfix">
+        <thead>
+        <tr>
+            <td>交易日期</td>
+            <td>名称</td>
+            <td>交易号</td>
+            <td>收款方</td>
+            <td>金额</td>
+            <td>交易状态</td>
+            <td>操作</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>2016-03-29</td>
+            <td>测试名称</td>
+            <td>2345678909876</td>
+            <td>小马</td>
+            <td>-1000</td>
+            <td class="failed">交易成功</td>
+            <td><a href="javascript:" class="js-detail">查看详情</a></td>
+        </tr>
+
+        <tr>
+            <td>2016-03-29</td>
+            <td>测试名称</td>
+            <td>2345678909876</td>
+            <td>小马</td>
+            <td>-1000</td>
+            <td class="failed">交易成功</td>
+            <td><a href="javascript:" class="js-detail">查看详情</a></td>
+        </tr>
+
+        <tr>
+            <td>2016-03-29</td>
+            <td>测试名称</td>
+            <td>2345678909876</td>
+            <td>小马</td>
+            <td>-1000</td>
+            <td class="failed">交易成功</td>
+            <td><a href="javascript:" class="js-detail">查看详情</a></td>
+        </tr>
+
+        <tr>
+            <td>2016-03-29</td>
+            <td>测试名称</td>
+            <td>2345678909876</td>
+            <td>小马</td>
+            <td>-1000</td>
+            <td class="failed">交易成功</td>
+            <td><a href="javascript:" class="js-detail">查看详情</a></td>
+        </tr>
+
+        </tbody>
+        <tfoot>
+        </tfoot>
+    </table>
+    <div class="pagenator">
+        <ul id="page-index">
+        </ul>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display:none;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <em></em>
+                <span class="modal-title" id="myModalLabel">转入</span>
+            </div>
+            <div class="modal-body">
+                <form action="javascript:" class="form" accept-charset="utf-8">
+                    <div class="form-group">
+                        <label for="recharge-amount" class="labe-control">转入</label>
+                        <input type="text" id="recharge-amount" name="amount" class="control-label input-inline">
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default  btn-radius modal-close js-modal-dismiss" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary btn-radius modal-confirm js-modal-confirm">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 转入-->
+<div class="modal fade" id="modal-recharge" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     style="display:none;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <em></em>
+                <span class="modal-title">转入</span>
+            </div>
+            <div class="modal-body">
+                <form action="javascript:" class="form" accept-charset="utf-8">
+                    <div class="form-group">
+                        <label for="recharge-amount-1" class="labe-control">转入金额</label>
+                        <input type="text" name="amount" id="recharge-amount-1" class="control-label input-inline">
+                    </div>
+                    <span>说明:转入金额 为账户充值时的付款金额,只能全额转入,且多笔付款金额不能汇总转入,只能逐笔输入付款金额进行转入</span>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default  btn-radius modal-dismiss js-modal-dismiss" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary btn-radius modal-confirm js-modal-confirm">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal 转入成功-->
+<div class="modal fade" id="modal-cuscuss" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     style="display:none;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <em></em>
+                <span class="modal-title">转入</span>
+            </div>
+            <div class="modal-body">
+                <div class="container-sucsuss-icon">
+                    <img src="./images/iconfont-tick@2x.png" alt="">
+                    <div>
+                        <span>转入成功,预计1小时到帐</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../components/util/flexible.js"></script>
+<script src="../components/vendors/jquery.min.js"></script>
+<script src="../components/vendors/jquery.modal.js"></script>
+<script src="../components/vendors/jqPaginator.min.js"></script>
+<script src="../components/base/base.js"></script>
+<script src="./payment_index.js"></script>
+</body>
+</html>

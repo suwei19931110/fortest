@@ -1,0 +1,16 @@
+@charset "UTF-8";
+.group-wrapper {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.group-wrapper .group-area {
+  font-size: 16px;
+  color: #0e0e0e;
+}
+.group-wrapper .right {
+  display: block;
+  float: right;
+}
+.group-wrapper .create-time {
+  color: #808584;
+}

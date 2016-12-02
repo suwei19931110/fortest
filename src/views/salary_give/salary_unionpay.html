@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../components/less/common.css">
+    <title>银联商务账单</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="nav">
+        <div class="logo">
+            <img src="../../static/images/logo@2x.png" alt="">
+        </div>
+        <ul class="menus">
+            <li>首页</li>
+            <li>工程项目
+                <ul class="drop-down" hidden>
+                    <li data-url="javascript:">下拉菜单1</li>
+                    <li data-url="javascript:">下拉菜单2</li>
+                    <li data-url="javascript:">下拉菜单3</li>
+                </ul>
+            </li>
+            <li>工资支付
+                <ul class="drop-down" hidden>
+                    <li data-url="javascript:">下拉菜单1</li>
+                    <li data-url="javascript:">下拉菜单2</li>
+                    <li data-url="javascript:">下拉菜单3</li>
+                </ul>
+            </li>
+            <li>安全中心
+                <ul class="drop-down" hidden>
+                    <li data-url="javascript:">下拉菜单1</li>
+                    <li data-url="javascript:">下拉菜单2</li>
+                    <li data-url="javascript:">下拉菜单3</li>
+                </ul>
+            </li>
+            <li>数据分析
+                <ul class="drop-down" hidden>
+                    <li data-url="javascript:">下拉菜单1</li>
+                    <li data-url="javascript:">下拉菜单2</li>
+                    <li data-url="javascript:">下拉菜单3</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="banner bg-01">
+            <div class="breadcrumbs">工资支付 <span>></span>我的账单</div>
+            <div class="table-title">
+                <span>
+                    <em></em>
+                    工资发放
+                </span>
+            </div>
+
+        </div>
+
+        <table class="ui-table">
+            <thead>
+            <tr>
+                <td>序号</td>
+                <td>交易日期</td>
+                <td>收支条目</td>
+                <td>金额</td>
+                <td>付款方</td>
+                <td>是否对账</td>
+                <td>操作</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>2016-03-29<br>13:56:02</td>
+                <td>工信保天津市天津市和平区<br>测试-生活费</td>
+                <td>-1000</td>
+                <td>伟基网络技术有限公司(尾号1234)</td>
+                <td>未对账</td>
+                <td class="failed">
+                    <a href="javascript:" class="item-detail">对帐</a>
+                    <a href="javascript:" class="item-detail">查看详情</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2016-03-29<br>13:56:02</td>
+                <td>工信保天津市天津市和平区<br>测试-生活费</td>
+                <td>-1000</td>
+                <td>伟基网络技术有限公司(尾号1234)</td>
+                <td>已对账</td>
+                <td class="failed">
+                    <a href="javascript:" class="item-detail">对帐</a>
+                    <a href="javascript:" class="item-detail">查看详情</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>2016-03-29<br>13:56:02</td>
+                <td>工信保天津市天津市和平区<br>测试-生活费</td>
+                <td>-1000</td>
+                <td>伟基网络技术有限公司(尾号1234)</td>
+                <td>未对账</td>
+                <td class="failed">
+                    <a href="javascript:" class="item-detail">对帐</a>
+                    <a href="javascript:" class="item-detail">查看详情</a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>2016-03-29<br>13:56:02</td>
+                <td>工信保天津市天津市和平区<br>测试-生活费</td>
+                <td>-1000</td>
+                <td>伟基网络技术有限公司(尾号1234)</td>
+                <td>已对账</td>
+                <td class="failed">
+                    <a href="javascript:" class="item-detail">对帐</a>
+                    <a href="javascript:" class="item-detail">查看详情</a></td>
+            </tr>
+            </tbody>
+            <tfoot>
+            </tfoot>
+        </table>
+        <div class="pagenator">
+            <ul id="page-index">
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="../components/util/flexible.js"></script>
+<script src="../components/vendors/jquery.min.js"></script>
+<script src="../components/vendors/jqPaginator.min.js"></script>
+<script src="../components/base/base.js"></script>
+<script>
+    $('.menus > li').hover(function () {
+        $(this).children('ul').toggleAttr('hidden')
+    })
+    initPagenator(2, 10);
+
+</script>
+</body>
+</html>

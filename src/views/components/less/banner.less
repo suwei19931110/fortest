@@ -1,0 +1,33 @@
+@import "mixin";
+
+.banner {
+  position: relative;
+
+  text-align: center;
+
+  .px2px(height, 452);
+}
+
+.banner img {
+  width: 100%;
+  .px2px(height, 452);
+}
+
+.board {
+  display: inline-block;
+  width: 1000px;
+  margin: 0 auto;
+  .px2px(margin-top, 94);
+}
+
+.bg-01 {
+  background: url("../../../static/images/bg_header.png") no-repeat bottom center;
+  height: 100px;
+}
+
+.bg-02 {
+  background: url("../../../static/images/bg-02@2x.png") no-repeat bottom right;
+  height: 100px;
+  background-color: #fff;
+  margin-top: 2px;
+}

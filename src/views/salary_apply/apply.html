@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../components/less/common.css">
+    <link rel="stylesheet" href="apply.css">
+    <title>工资申请</title>
+</head>
+<body class="layout layout-m-w">
+
+<div class="container">
+
+    <div class="nav">
+        <div class="logo">
+            <img src="../../static/images/logo@2x.png" alt="">
+        </div>
+        <ul class="menus">
+            <li data-url="javascript:">首页</li>
+            <li>工程项目
+                <ul class="drop-down" hidden>
+                    <li data-url="javascript:">下拉菜单1</li>
+                    <li data-url="javascript:">下拉菜单2</li>
+                    <li data-url="javascript:">下拉菜单3</li>
+                </ul>
+            </li>
+            <li>工资支付
+                <ul class="drop-down" hidden>
+                    <li data-url="javascript:">下拉菜单1</li>
+                    <li data-url="javascript:">下拉菜单2</li>
+                    <li data-url="javascript:">下拉菜单3</li>
+                </ul>
+            </li>
+            <li>安全中心
+                <ul class="drop-down" hidden>
+                    <li data-url="javascript:">下拉菜单1</li>
+                    <li data-url="javascript:">下拉菜单2</li>
+                    <li data-url="javascript:">下拉菜单3</li>
+                </ul>
+            </li>
+            <li>数据分析
+                <ul class="drop-down" hidden>
+                    <li data-url="javascript:">下拉菜单1</li>
+                    <li data-url="javascript:">下拉菜单2</li>
+                    <li data-url="javascript:">下拉菜单3</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="banner  bg-02">
+            <div class="breadcrumbs">工资支付 <span>></span>工资申请</div>
+            <div class="ui-tab">
+                <ul>
+                    <li class="fs-normal ui-tab--selected">快速申请</li>
+                    <li class="fs-normal">批量申请</li>
+                </ul>
+            </div>
+        </div>
+        <div class="js-rapid_applay">
+            <div class="page-form form-inline mg_16_12">
+                <form>
+                    <div class="form-inline">
+                        <label for="projectName" class="label-control">工程项目</label>
+                        <div class="select-wrapper">
+                            <span class="text-mask fs-medium">-请输入发放金额-</span>
+                            <select name="projectName" id="projectName" class="form-select-inline form-select">
+                                <option value="" selected disabled></option>
+                                <option value="">项目</option>
+                                <option value="">项目</option>
+                                <option value="">项目</option>
+                                <option value="">项目</option>
+                                <option value="">项目</option>
+                            </select>
+                            <span class="icon icon--right"><i class="icon__arrow__down"></i></span>
+
+                        </div>
+                    </div>
+                    <div class="form-inline ml_10">
+                        <label for="teamName" class="label-control">项目班组</label>
+                        <div class="select-wrapper">
+                            <span class="text-mask fs-medium">-请输入发放金额-</span>
+                            <select name="projectName" id="teamName" class="form-select-inline form-select">
+                                <option value="" selected disabled></option>
+                                <option value="">项目班组</option>
+                                <option value="">项目班组</option>
+                                <option value="">项目班组</option>
+                                <option value="">项目班组</option>
+                                <option value="">项目班组</option>
+                            </select>
+                            <span class="icon icon--right"><i class="icon__arrow__down"></i></span>
+                        </div>
+                    </div>
+                </form>
+                <div class="text-box">
+                    <label for="manager-name" class="label-control">记工负责人</label>
+                    <span id="manager-name">东方不败</span>
+                </div>
+            </div>
+            <div class="page-table">
+                <table class="ui-table page-form">
+                    <thead>
+                    <tr>
+                        <td>劳务工人</td>
+                        <td>工资卡</td>
+                        <td>
+                            <a href="javascipt:">相同发放金额设置</a></td>
+                        <td>
+                            <a href="javascript:">相同发放事由设置</a></td>
+                        <td>操作</td>
+                    </tr>
+                    </thead>
+                    <tbody class="fs-medium">
+                    <tr class="">
+                        <td>小马</td>
+                        <td>6225****22222
+                            <div class="bubble__wrapper">
+                                <div class="arrow_box">
+                                    <!--<h1 class="logo">css arrow please!</h1>-->
+                                    <span>3</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="">
+                                <input type="text" class="text-input lg-sm" placeholder="请输入发放金额">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="td-wrapper">
+                                <div class="select-wrapper ">
+                                    <span class="text-mask fs-medium">-请输入发放金额-</span>
+                                    <select name="" id="pay-reason" class="form-select js-pay-reason">
+                                        <option value="" selected disabled></option>
+                                        <option value="">金额</option>
+                                        <option value="">金额</option>
+                                        <option value="">金额</option>
+                                        <option value="">金额</option>
+                                    </select>
+                                    <span class="icon icon--right"><i class="icon__arrow__down"></i></span>
+                                </div>
+                                <!--<div class="btn&#45;&#45;round dis-inlib"></div>-->
+                            </div>
+                        </td>
+                        <td><a href="javascrip:">删除</a></td>
+                    </tr>
+                    </tbody>
+                    <tfooter></tfooter>
+                </table>
+            </div>
+            <div class="table__sum">
+                <p class="mg_16_12 ">发放预计: <span class="sum__num--normal  js-sum__workers ml_5">0</span>人,共 <span
+                        class="sum__num--normal js-sum__salary__init ml_5 fs-larger">0</span><span
+                        class="sum__num--normal js-sum__salary__float">.00</span>元</p>
+            </div>
+            <div class="button-wrapper ta-c">
+                <button class="btn btn-primary btn-size-md btn-rd-20 apply_button js-apply-button"> 提交申请</button>
+            </div>
+        </div>
+        <div class="js-bat_applay" hidden>
+            <div class="page-form form-inline mg_16_12">
+                <form>
+                    <div class="form-inline">
+                        <span>工信保天津市天津市和平区测试地</span>
+                    </div>
+                </form>
+                <div class="text-box">
+                    <label for="manager-name-2" class="label-control">班组长:</label>
+                    <span id="manager-name-2" class="fs-small">东方不败</span>
+                </div>
+            </div>
+            <div class="page-table">
+                <table class="ui-table page-form">
+                    <thead>
+                    <tr>
+                        <td>劳务工人</td>
+                        <td>工资卡</td>
+                        <td>
+                            <a href="javascipt:">相同发放金额设置</a></td>
+                        <td>
+                            <a href="javascript:">相同发放事由设置</a></td>
+                        <td>操作</td>
+                    </tr>
+                    </thead>
+                    <tbody class="fs-medium">
+                    <tr class="">
+                        <td>小马</td>
+                        <td>6225****22222
+                            <div class="arrow_box">
+                                <!--<h1 class="logo">css arrow please!</h1>-->
+                                <span>1</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="select-wrapper">
+                                <span class="text-mask fs-medium">-请输入发放金额-</span>
+                                <select name="" id="pay-amount-3" class="form-select  js-pay-amount">
+                                    <option value="" selected disabled></option>
+                                    <option value="">金额</option>
+                                    <option value="">金额</option>
+                                    <option value="">金额</option>
+                                    <option value="">金额</option>
+                                </select>
+                                <span class="icon icon--right"><i class="icon__arrow__down"></i></span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="td-wrapper">
+                                <div class="select-wrapper ">
+                                    <span class="text-mask fs-medium">-请输入发放金额-</span>
+                                    <select name="" id="pay-reason-3" class="form-select js-pay-reason">
+                                        <option value="" selected disabled></option>
+                                        <option value="">金额</option>
+                                        <option value="">金额</option>
+                                        <option value="">金额</option>
+                                        <option value="">金额</option>
+                                    </select>
+                                    <span class="icon icon--right"><i class="icon__arrow__down"></i></span>
+                                </div>
+                                <!--<div class="btn&#45;&#45;round dis-inlib"></div>-->
+                            </div>
+                        </td>
+                        <td><a href="javascrip:">删除</a><span>|</span><a href="javascrip:">修改</a></td>
+                    </tr>
+                    <tr class="">
+                        <td>小马</td>
+                        <td>6225****22222
+                            <div class="arrow_box">
+                                <!--<h1 class="logo">css arrow please!</h1>-->
+                                <span>2</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="select-wrapper">
+                                <span class="text-mask fs-medium">-请输入发放金额-</span>
+                                <select name="" id="pay-amount-4" class="form-select  js-pay-amount">
+                                    <option value="" selected disabled></option>
+                                    <option value="">金额</option>
+                                    <option value="">金额</option>
+                                    <option value="">金额</option>
+                                    <option value="">金额</option>
+                                </select>
+                                <span class="icon icon--right"><i class="icon__arrow__down"></i></span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="td-wrapper">
+                                <div class="select-wrapper ">
+                                    <span class="text-mask fs-medium">-请输入发放金额-</span>
+                                    <select name="" id="pay-reason-4" class="form-select js-pay-reason">
+                                        <option value="" selected disabled></option>
+                                        <option value="">金额</option>
+                                        <option value="">金额</option>
+                                        <option value="">金额</option>
+                                        <option value="">金额</option>
+                                    </select>
+                                    <span class="icon icon--right"><i class="icon__arrow__down"></i></span>
+                                </div>
+                                <!--<div class="btn&#45;&#45;round dis-inlib"></div>-->
+                            </div>
+                        </td>
+                        <td><a href="javascrip:">删除</a><span>|</span><a href="javascrip:">修改</a></td>
+                    </tr>
+                    </tbody>
+                    <tfooter></tfooter>
+                </table>
+            </div>
+            <div class="table__sum">
+                <p class="mg_16_12 ">发放预计: <span class="sum__num--normal  js-sum__workers ml_5">0</span>人,共 <span
+                        class="sum__num--normal js-sum__salary__init ml_5 fs-larger">0</span><span
+                        class="sum__num--normal js-sum__salary__float">.00</span>元</p>
+            </div>
+            <div class="button-wrapper ta-c">
+                <button class="btn btn-primary btn-size-md btn-rd-20 apply_button js-apply-button"> 提交申请</button>
+            </div>
+        </div>
+        <div class="js-upload" hidden>
+            <div class="g-step">
+                <p class="fs-small  mg_16_12 ">操作说明:</p>
+                <div class="step step--01">
+                    <img class="step__icon" src="images/shangchuan@2x.png" alt="">
+                    <p>上传文件</p>
+                    <p class="step__info">按照excel模板要求,填写要素并上传</p>
+                </div>
+                <div class="division">
+                    <img src="images/jiantou@2x.png" alt="">
+                </div>
+                <div class="step step02">
+                    <img class="step__icon" src="images/renwufangtanfuben4@2x.png" alt="">
+                    <p>确认发放</p>
+                    <p class="step__info">确定发放信息,如劳务工人,金额等</p>
+                </div>
+                <div class="division">
+                    <img src="images/jiantou@2x.png" alt="">
+                </div>
+                <div class="step step03">
+                    <img class="step__icon" src="images/gou@2x.png" alt="">
+                    <p>申请成功</p>
+                    <p class="step__info">界面提示申请成功,进入工资发放流程</p>
+                </div>
+            </div>
+            <div class="upload-wrapper">
+                <form class="form-inline mg-b100  mg_16_12 ">
+                    <p><a href="javascript:" class="fs-medium download_link">下载excel模板</a></p>
+                    <label for="">发放文件:</label>
+                    <input type="text" class="text-input input--large" disabled placeholder="--请选择发放文件--">
+                    <input type="file" name="image"
+                           accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel "
+                           class="upload__input js-upload-real" value=""/>
+                    <button class="btn btn-default upload__button js-upload-button">选择文件</button>
+                </form>
+                <div class="button-wrapper ta-c">
+                    <button type="" class="btn btn-primary btn-size-md btn-rd-20 apply_button js-apply-button">下一步
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../components/vendors/jquery.min.js"></script>
+<script src="../components/base/base.js"></script>
+
+<script>
+    $('.menus > li').hover(function () {
+        $(this).children('ul').toggleAttr('hidden')
+    })
+    function triggerSelection (selection) {
+        var element = $(selection)[ 0 ],
+                worked = false;
+        if (document.createEvent) { // all browsers
+            var e = document.createEvent("MouseEvents");
+            e.initMouseEvent("mousedown", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+            worked = element.dispatchEvent(e);
+        } else if (element.fireEvent) { // ie
+            worked = element.fireEvent("onmousedown");
+        }
+        if (!worked) { // unknown browser / error
+            alert("It didn't worked in your browser.");
+        }
+    }
+
+    $('.text-mask').click(function (event) {
+        var target = $(event.target);
+        var nextTarget = $(event.target).next()[ 0 ];
+        var tid = '#' + $(nextTarget).attr('id');
+        triggerSelection(tid);
+        $(nextTarget).change(function () {
+            $(target).addClass('hidden')
+            $(target).attr('hidden', true)
+        })
+
+    })
+</script>
+</body>
+</html>

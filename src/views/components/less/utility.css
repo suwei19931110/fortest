@@ -1,0 +1,109 @@
+/*------------------------------------*\
+    $通用样式
+\*------------------------------------*/
+body {
+  font-family: Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", FontAwesome, sans-serif;
+  background-color: #eef3f2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  text-decoration: none;
+  color: #0085d0;
+}
+/*------------------------------------*\
+    $utility 通用工具类
+\*------------------------------------*/
+.dis-inline {
+  display: inline-block;
+}
+.dis-inlib {
+  display: inline-block;
+}
+/*------------------------------------*\
+    $清除浮动
+\*------------------------------------*/
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+input,
+textarea {
+  font-size: 100%;
+}
+.layout {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.layout-m-w {
+  min-width: 1200px;
+  width: 100%;
+}
+.main {
+  width: 1000px;
+  margin: 0 auto;
+}
+.v-middle {
+  vertical-align: middle;
+}
+.ta-c {
+  text-align: center;
+}
+.ta-r {
+  text-align: right;
+}
+.mt_10 {
+  margin-top: 10px;
+}
+.mt_15 {
+  margin-top: 15px;
+}
+.mt_20 {
+  margin-top: 20px;
+}
+.ml_5 {
+  margin-left: 5px;
+}
+.ml_10 {
+  margin-left: 10px;
+}
+.mr_20 {
+  margin-right: 20px;
+}
+.ml_20 {
+  margin-left: 20px;
+}
+.mg_0 {
+  margin: 0;
+}
+.mg_16_12 {
+  margin: 16px 12px;
+}
+.f-lt {
+  *display: inline;
+  float: left;
+}
+.f-rt {
+  *display: inline;
+  float: right;
+}
+.fs-small {
+  font-size: 12px;
+}
+.fs-medium {
+  font-size: 14px;
+}
+.fs-normal {
+  font-size: 16px;
+}
+.fs-larger {
+  font-size: 24px;
+}
+.let-sp-2 {
+  letter-spacing: 2px;
+}

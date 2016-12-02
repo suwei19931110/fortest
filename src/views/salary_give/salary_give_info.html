@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../components/less/common.css">
+    <link rel="stylesheet" href="salary_give.css">
+    <link rel="stylesheet" href="give_info.css">
+    <title>工资发放详情</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="nav">
+        <div class="logo">
+            <img src="../../static/images/logo@2x.png" alt="">
+        </div>
+        <ul class="menus">
+            <li>首页</li>
+            <li>工程项目
+                <ul class="drop-down" hidden>
+                    <li data-url="javascript:">下拉菜单1</li>
+                    <li data-url="javascript:">下拉菜单2</li>
+                    <li data-url="javascript:">下拉菜单3</li>
+                </ul>
+            </li>
+            <li>工资支付
+                <ul class="drop-down" hidden>
+                    <li data-url="javascript:">下拉菜单1</li>
+                    <li data-url="javascript:">下拉菜单2</li>
+                    <li data-url="javascript:">下拉菜单3</li>
+                </ul>
+            </li>
+            <li>安全中心
+                <ul class="drop-down" hidden>
+                    <li data-url="javascript:">下拉菜单1</li>
+                    <li data-url="javascript:">下拉菜单2</li>
+                    <li data-url="javascript:">下拉菜单3</li>
+                </ul>
+            </li>
+            <li>数据分析
+                <ul class="drop-down" hidden>
+                    <li data-url="javascript:">下拉菜单1</li>
+                    <li data-url="javascript:">下拉菜单2</li>
+                    <li data-url="javascript:">下拉菜单3</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="banner">
+            <div class="text-guide">工资支付 <span>></span>工资发放<span>></span>工资发放详情</div>
+            <div class="table-title">
+                <span>
+                    <em></em>
+                    工资发放详情
+                </span>
+            </div>
+        </div>
+        <div class="group-wrapper">
+            <p class="group-area">
+                <span>工信保天津市和平区测试地</span>
+            </p>
+            <p class="child goup-name">
+                <span class="left">班组:妙手空空</span>
+                <span class="right create-time">创建时间:2016.09.10 10:30:45</span>
+            </p>
+        </div>
+
+        <table class=" ui-table">
+            <thead>
+            <tr>
+                <td>订单号</td>
+                <td>劳务工人</td>
+                <td>工资卡</td>
+                <td>发放金额</td>
+                <td>发放事由</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1234567890987654</td>
+                <td>老王</td>
+                <td>1234578*****90987654</td>
+                <td>-1999</td>
+                <td>生活费</td>
+            </tr>
+            <tr>
+                <td>1234567890987654</td>
+                <td>老王</td>
+                <td>1234578*****90987654</td>
+                <td>-1999</td>
+                <td>生活费</td>
+            </tr>
+            <tr>
+                <td>1234567890987654</td>
+                <td>老王</td>
+                <td>1234578*****90987654</td>
+                <td>-1999</td>
+                <td>生活费</td>
+            </tr>
+            <tr>
+                <td>1234567890987654</td>
+                <td>老王</td>
+                <td>1234578*****90987654</td>
+                <td>-1999</td>
+                <td>生活费</td>
+            </tr>
+            <tr>
+                <td>1234567890987654</td>
+                <td>老王</td>
+                <td>1234578*****90987654</td>
+                <td>-1999</td>
+                <td>生活费</td>
+            </tr>
+
+            </tbody>
+            <tfoot>
+            </tfoot>
+        </table>
+        <div class="pagenator">
+            <ul id="page-index">
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="../components/util/flexible.js"></script>
+<script src="../components/vendors/jquery.min.js"></script>
+<script src="../components/vendors/jqPaginator.min.js"></script>
+<script src="../components/base/base.js"></script>
+<script>
+    $('.menus > li').hover(function () {
+        $(this).children('ul').toggleAttr('hidden')
+    })
+    initPagenator(2, 10);
+
+</script>
+</body>
+</html>

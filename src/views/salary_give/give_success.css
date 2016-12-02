@@ -1,0 +1,23 @@
+@charset "UTF-8";
+.main .success {
+  display: block;
+  width: auto;
+  margin: 100px auto;
+  text-align: center;
+}
+.main .success .sub-title {
+  font-size: 20px;
+}
+.main .success img {
+  width: 80px;
+  display: block;
+  margin: 0 auto;
+}
+.main .success button {
+  margin-left: 22px;
+  margin-right: 22px;
+}
+.num-body,
+.count-money {
+  color: #dc6463;
+}
